@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Deploy staging
+          command: |
+            echo 'ok'
+            # sh -ex -c "ssh -o 'StrictHostKeyChecking no' deploy@${STAGING_HOST} < bin/deploy_staging.sh"
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: staging

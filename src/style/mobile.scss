@@ -1,0 +1,362 @@
+@media screen and (max-width: "768px") {
+  .course-details-container {
+    .course-details-content-container {
+      .course-picture {
+        height: 360px;
+      }
+    }
+    .course-details-content-container.el-row {
+      height: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .login-register-dialog .el-form-item > .el-form-item__content,
+  .account-security-container .el-form-item > .el-form-item__content {
+    margin-left: 0 !important;
+  }
+
+
+  .section-content {
+    margin: 2%;
+  }
+
+  .my-page-container {
+    .personal-info-container {
+      display: block;
+      .personal-info-left-container {
+        max-width: 382px;
+        margin: 0 auto 20px auto;
+        .user_img {
+          width: 64px;
+          height: 64px;
+          margin: 0 0 0 15px;
+          img {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
+      .count-down {
+        float: none;
+        max-width: 382px;
+        margin: 0 auto;
+      }
+    }
+    .learning-container {
+      .el-collapse {
+        .el-collapse-item {
+          .el-collapse-item__arrow {
+            max-width: 90px;
+            margin: 0 -10px 0 5px;
+          }
+        }
+      }
+      .product-container {
+        .study-progress-content {
+          .include-courses,
+          .learning-people {
+            margin-left: 5px;
+            .text-container {
+              margin-left: 6px;
+              padding-left: 6px;
+              p {
+                font-size: 12px;
+              }
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .study-description {
+          .product-name {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .my-page-container .personal-info-container {
+    display: block !important;
+  }
+
+  .my-page-container .personal-info-container .settings {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .user-message-icon {
+    width: 100% !important;
+  }
+  .section-title {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-container {
+
+    .el-carousel {
+      margin-top: 0 !important;
+      .el-carousel__container {
+        height: 180px !important;
+        .el-carousel__item {
+          a {
+            width: 50% !important;
+            img {
+              width: 100% !important;
+            }
+          }
+        }
+        .count-down {
+          float: right;
+          width: 382px;
+        }
+      }
+    }
+  }
+  .study-task-test-content {
+    .study-test-content {
+      -webkit-overflow-scrolling: touch;
+      .test-questions {
+        -webkit-overflow-scrolling: touch;
+        .question-item {
+          .question-content {
+            .question-result {
+              .el-radio {
+                max-width: 600px;
+              }
+              .el-radio__label {
+                & > div {
+                  p {
+                    max-width: 600px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .payment-container {
+    .product-container {
+      .product-info-container {
+        .product-pay-type-container {
+          .payment-middle-separation {
+            .product-info-pay-interval {
+              margin-top: 20px;
+            }
+          }
+          .product-payments-container {
+            .product-payments-title {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .product-payments-action {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: "768px") {
+  .course-details-content-container {
+    min-height: 340px;
+    .course-picture {
+      height: 340px;
+    }
+  }
+  .course-introduction {
+    min-height: 340px;
+  }
+  .my-page-container {
+    .personal-info-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .my-page-container {
+    .personal-info-container {
+      .personal-info-left-container {
+        .user_img {
+          width: 128px;
+          height: 128px;
+          img {
+            width: 128px;
+            height: 128px;
+          }
+        }
+      }
+    }
+    .learning-container {
+      .el-collapse {
+        .el-collapse-item {
+          .el-collapse-item__arrow {
+            width: 90px;
+            margin-right: 0;
+          }
+        }
+      }
+      .product-container {
+        .study-progress-content {
+          .include-courses,
+          .learning-people {
+            margin-left: 22px;
+            .text-container {
+              margin-left: 12px;
+              padding-left: 12px;
+              p {
+                font-size: 16px;
+              }
+              span {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+        .study-description {
+          .product-name {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .study-task-test-content {
+    .study-test-content {
+      .test-questions {
+        overflow: hidden;
+        .question-item {
+          .question-content {
+            .question-result {
+              .el-radio {
+                width: 600px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .payment-container {
+    .product-container {
+      .product-info-container {
+        .product-pay-type-container {
+          display: flex;
+          .payment-middle-separation {
+            .product-info-pay-interval {
+              text-align: center;
+              margin-top: 66px;
+            }
+          }
+          .product-payments-container {
+            .product-payments-title {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+      .product-payments-action {
+        margin-top: 44px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "992px") {
+  body .layer {
+    width: 100% !important;
+    min-width: 0;
+    margin: 0 0;
+  }
+  .el-menu-item {
+    a {
+      display: inline-block;
+      width: 100%;
+      line-height: 36px;
+    }
+  }
+  .el-dialog {
+    margin-top: 0 !important;
+    width: 100% !important;
+    transform: initial !important;
+  }
+  .product-card-container {
+    margin: 8% 8% 8% 20px;
+  }
+  .course-details-content-container {
+    height: initial !important;
+    height: auto !important;
+    margin-bottom: 0;
+    .course-introduction {
+      width: 100%;
+      height: initial !important;
+      height: auto !important;
+    }
+  }
+  .study-task-container {
+    padding: 10px 10px 0 10px !important;
+    .el-col:nth-child(2) {
+      padding: 5px 0 0 0;
+    }
+    .test-questions {
+      padding: 0 !important;
+      .question-item {
+        border: 0 !important;
+        .question-content {
+          p {
+            max-width: 290px !important;
+          }
+          img {
+            max-width: 300px !important;
+          }
+
+          .el-radio__label {
+            p {
+              max-width: 250px !important;
+            }
+          }
+        }
+        .explanation {
+          img {
+            max-width: 320px !important;
+          }
+        }
+      }
+    }
+  }
+  .payment-container {
+    .product-container {
+      .product-info-container {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: "992px") {
+  .study-task-container {
+    .el-col:nth-child(2) {
+      padding-left: 15px;
+    }
+  }
+  .course-details-content-container {
+    &.layer {
+      margin-bottom: 100px;
+    }
+  }
+  .payment-container {
+    min-width: 1040px;
+    .product-container {
+      .product-info-container {
+        padding-left: 40px;
+      }
+    }
+  }
+}

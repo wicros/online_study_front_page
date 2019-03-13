@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-weight: normal;
+    font-family: "PingFang SC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover {
+        outline: none;
+    }
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #C4C4C4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%; // background-color: #F5F5F5;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.back_img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddingTop {
+    padding-top: 1.95rem;
+}
+
+@keyframes backOpacity {
+    0% {
+        opacity: 1
+    }
+    25% {
+        opacity: .5
+    }
+    50% {
+        opacity: 1
+    }
+    75% {
+        opacity: .5
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.animation_opactiy {
+    animation: backOpacity 2s ease-in-out infinite;
+}
+
+.layer {
+    width: 1040px;
+    min-width: 1040px;
+    margin: 0 auto;
+}
+
+.container-padding {
+    padding: 50px 0;
+}
+
+.vertical-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.section-title {
+    display: block;
+    padding-bottom: 10px;
+    span {
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.pagination-container {
+    text-align: center;
+    margin-bottom: 40px;
+    .el-pager li {
+        font-size: 20px;
+        font-family: "Sul Sans";
+        color: #000000;
+        &.active {
+        color: #ffffff;
+        background-color: #6526b8;
+        border: 1px solid #6526b8;
+        box-sizing: border-box;
+        border-radius: 100px;
+        }
+    }
+}
+
+.el-dialog {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+
+.no-data {
+    margin-top: 20px;
+    .el-alert__title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.el-form-item__error {
+    z-index: 300;
+    right: 0;
+    text-align: right;
+}
+
+.v-modal {
+    z-index: 1998 !important;
+}
+
+.el-dialog__wrapper {
+    z-index: 1999 !important;
+}

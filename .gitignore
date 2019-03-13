@@ -1,0 +1,10 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules
+.idea
+.vscode
+.git
+dist
+src/config/env.js
+dump.rdb
+.DS_Store
+
